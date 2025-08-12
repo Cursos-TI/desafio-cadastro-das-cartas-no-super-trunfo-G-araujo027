@@ -15,7 +15,7 @@ int main (){
     scanf(" %c", &estado1); 
 
     printf("Qual o Codigo? ");
-    scanf("%s", &cd_carta1); 
+    scanf("%s", cd_carta1); 
 
     printf("Nome da Cidade: ");
     scanf(" %[^\n]", cidade1);
@@ -39,7 +39,7 @@ int main (){
     scanf(" %c", &estado2);
 
     printf("Qual o Codigo? ");
-    scanf("%s", &cd_carta2);
+    scanf("%s", cd_carta2);
 
     printf("Nome da Cidade: ");
     scanf(" %[^\n]", cidade2);
