@@ -1,9 +1,13 @@
 #include <stdio.h>
 
 int main (){
+    // Cadastros de variavel com somente uma caractere
     char estado1, estado2;
+    // Cadastro de variaveis do tipo Strings
     char cd_carta1 [99], cd_carta2 [99], cidade1 [99], cidade2 [99];
+    // cadastro variaveis interias
     int populacao1, populacao2, pontos_turisticos1, pontos_turisticos2;
+    // cadastro variaveis com . fluetuante
     float area1, area2, pib1, pib2, densidade1, densidade2, pib_per_capital1, pib_per_capital2;
 
     printf("===Bem-vindo ao Super Trunfo - Países===\n");
@@ -31,6 +35,8 @@ int main (){
 
     printf("Qual a quantidade de pontos turisticos? ");
     scanf("%d", &pontos_turisticos1);
+
+    printf("==================================\n");
 
     /* Entrada de dados da Carta 2*/
     printf("Cadastro carta 2:\n");
