@@ -6,7 +6,7 @@ int main (){
     int populacao1, populacao2, pontos_turisticos1, pontos_turisticos2;
     float area1, area2, pib1, pib2, densidade1, densidade2, pib_per_capital1, pib_per_capital2;
 
-    printf("===Bem ao Super Triunfo===\n");
+    printf("===Bem-vindo ao Super Trunfo - Países===\n");
     
     /* Entrada de dados da Carta 1*/
     printf("Cadastro carta 1:\n"); 
