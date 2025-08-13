@@ -66,8 +66,8 @@ int main (){
     densidade1 = (float) populacao1 / area1;
     densidade2 = (float) populacao2 / area2;
 
-    pib_per_capital1 = (double) pib1 / populacao1;
-    pib_per_capital2 = (double) pib2 / populacao2;
+    pib_per_capital1 = (float) (pib1 * 1000000000)/ populacao1;
+    pib_per_capital2 = (float) (pib2 * 1000000000)/ populacao2;
 
     // Saida de dados carta 1
     printf("==================================\n");
