@@ -7,7 +7,7 @@ int main (){
     char cd_carta1 [99], cd_carta2 [99], cidade1 [99], cidade2 [99];
     // cadastro variaveis inteiras
     int populacao1, populacao2, pontos_turisticos1, pontos_turisticos2;
-    // cadastro variaveis com . fluetuante
+    // cadastro variaveis com . flutuante
     float area1, area2, pib1, pib2, densidade1, densidade2, pib_per_capital1, pib_per_capital2;
 
     printf("===Bem-vindo ao Super Trunfo - Países===\n");
