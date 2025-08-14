@@ -55,7 +55,7 @@ int main (){
 
     printf("Qual a Area dessa cidade? ");
     scanf("%f", &area2);
-
+ 
     printf("Qual o PIB dessa cidade? ");
     scanf("%f", &pib2);
 
