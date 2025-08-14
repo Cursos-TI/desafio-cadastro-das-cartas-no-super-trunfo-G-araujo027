@@ -5,10 +5,12 @@ int main (){
     char estado1, estado2;
     // Cadastro de variaveis do tipo Strings
     char cd_carta1 [99], cd_carta2 [99], cidade1 [99], cidade2 [99];
-    // cadastro variaveis interias
-    int populacao1, populacao2, pontos_turisticos1, pontos_turisticos2;
-    // cadastro variaveis com . fluetuante
-    float area1, area2, pib1, pib2, densidade1, densidade2, pib_per_capital1, pib_per_capital2;
+    // cadastro variaveis inteiras
+    int pontos_turisticos1, pontos_turisticos2;
+    // cadastro variaveis interias para grandes números
+    unsigned long int populacao1, populacao2;
+    // cadastro variaveis com . flutuante
+    float area1, area2, pib1, pib2, densidade1, densidade2, pib_per_capital1, pib_per_capital2, inverso_desnsidade1, inverso_densidade2, super_poder1, super_poder2;
 
     printf("===Bem-vindo ao Super Trunfo - Países===\n");
     
@@ -55,19 +57,34 @@ int main (){
 
     printf("Qual a Area dessa cidade? ");
     scanf("%f", &area2);
- 
+
     printf("Qual o PIB dessa cidade? ");
     scanf("%f", &pib2);
 
     printf("Qual a quantidade de pontos turisticos? ");
     scanf("%d", &pontos_turisticos2);
 
-    /*Calculos extras*/
+    /Calculos/
+
+    // calculo de densidade
     densidade1 = (float) populacao1 / area1;
     densidade2 = (float) populacao2 / area2;
 
+    // calculo inverso de densidade 
+    inverso_desnsidade1 = (float) area1 / populacao1;
+    inverso_densidade2 = (float) area2 / populacao2;
+
+    // calculo PIB per capital
     pib_per_capital1 = (float) (pib1 * 1000000000)/ populacao1;
     pib_per_capital2 = (float) (pib2 * 1000000000)/ populacao2;
+
+    // calculo do Super poder
+    super_poder1 = (float) populacao1 + area1 + pib1 + pontos_turisticos1 + pib_per_capital1 + inverso_desnsidade1;
+    super_poder2 = (float) populacao2 + area2 + pib2 + pontos_turisticos2 + pib_per_capital2 + inverso_densidade2;
+
+    // comparação de cartas
+
+
 
     // Saida de dados carta 1
     printf("==================================\n");
@@ -81,6 +98,7 @@ int main (){
     printf("Numero de Pontos Turisticos: %d\n", pontos_turisticos1);
     printf("Densidade Populacional: %.2f hab/km\n", densidade1);
     printf("PIB per Capital: %.2f reais\n", pib_per_capital1);
+    printf("Super Poder: %.2f", super_poder1);
     printf("==================================\n");
 
     // Saida de dados carta 2
@@ -94,6 +112,7 @@ int main (){
     printf("Numero de Pontos Turisticos: %d\n", pontos_turisticos2);
     printf("Densidade Populacional: %.2f hab/km\n", densidade2);
     printf("PIB per Capital: %.2f reais\n", pib_per_capital2);
+    printf("Super Poder: %.2f", super_poder1);
     printf("==================================");
-    return 0;
+    return 0;
 }
