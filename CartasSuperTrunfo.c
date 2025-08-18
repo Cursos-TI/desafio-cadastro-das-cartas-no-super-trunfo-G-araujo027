@@ -6,7 +6,7 @@ int main (){
     // Cadastro de variaveis do tipo Strings
     char cd_carta1 [99], cd_carta2 [99], cidade1 [99], cidade2 [99];
     // cadastro variaveis inteiras
-    int pontos_turisticos1, pontos_turisticos2;
+    int pontos_turisticos1, pontos_turisticos2, populacao, area, pib, pontos_turisticos, pib_per_capital, super_poder;
     // cadastro variaveis interias para grandes números
     unsigned long int populacao1, populacao2;
     // cadastro variaveis com . flutuante
@@ -82,8 +82,14 @@ int main (){
     super_poder1 = (float) populacao1 + area1 + pib1 + pontos_turisticos1 + pib_per_capital1 + inverso_desnsidade1;
     super_poder2 = (float) populacao2 + area2 + pib2 + pontos_turisticos2 + pib_per_capital2 + inverso_densidade2;
 
-    // comparação de cartas
-
+    // comparação
+    populacao = populacao1 > populacao2;
+    area = area1 > area2;
+    pib = pib1 > pib2;
+    pontos_turisticos = pontos_turisticos1 > pontos_turisticos2;
+    densidade = densidade1 < densidade2;
+    pib_per_capital = pib_per_capital1 > pib_per_capital2;
+    super_poder = super_poder1 > super_poder2;
 
 
     // Saida de dados carta 1
@@ -114,5 +120,18 @@ int main (){
     printf("PIB per Capital: %.2f reais\n", pib_per_capital2);
     printf("Super Poder: %.2f", super_poder1);
     printf("==================================");
+
+    // Comparação de cartas
+    printf("Comparação das cartas");
+    printf("(1) carta 1 (0) carta 2");
+    printf("População: (%d)", populacao);
+    printf("Área: (%d)", area);
+    printf("PIB: (%d)", pib);
+    printf("Pontos Turisticos: (%d)", pontos_turisticos);
+    printf("Densidade Populacional: (%d)", Densidade);
+    printf("PIB per Capital: (%d)", pib_per_capital);
+    printf("Super Poder: (%d)", super_poder);
+    printf("==================================");
+
     return 0;
 }
