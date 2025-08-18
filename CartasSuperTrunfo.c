@@ -127,7 +127,9 @@ int main (){
 
     // Comparação de cartas
     printf("Comparação das cartas\n");
+    printf("---------------------------\n");
     printf("|carta 1 (1) | carta 2 (0)|\n");
+    printf("---------------------------\n");
     printf("População: (%lu)\n", populacao);
     printf("Área: (%d)\n", area);
     printf("PIB: (%d)\n", pib);
