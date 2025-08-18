@@ -12,7 +12,7 @@ int main (){
     // cadastro variaveis com . flutuante
     float area1, area2, pib1, pib2, densidade1, densidade2, pib_per_capital1, pib_per_capital2, inverso_densidade1, inverso_densidade2, super_poder1, super_poder2;
 
-    printf("===Bem-vindo ao Super Trunfo - Países===\n");
+    printf("===Bem-vindo ao Super Trunfo===\n");
     
     /* Entrada de dados da Carta 1*/
     printf("Cadastro carta 1:\n"); 
